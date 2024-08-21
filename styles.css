@@ -1,0 +1,705 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header img {
+    height: 60px;
+    padding: 0;
+}
+
+.header-text {
+    font-family: 'QuantumFont', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a, footer a {
+    color: #fff;
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+}
+
+
+.login-btn {
+    background-color: #4a00e0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.centered-figure {
+    text-align: center; /* Center-align the caption */
+    margin: 20px auto; /* Center the figure with margins */
+}
+
+.centered-figure img {
+    max-width: 40%; /* Adjust percentage to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.centered-figure figcaption {
+    font-style: italic;
+    color: #555; /* Optional: Change caption color */
+    margin-top: 10px;
+}
+
+
+
+/* Hero Section for Homepage */
+.hero {
+    position: relative;
+    background: url('qc1.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.hero .fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeOverlay 1s ease-in-out forwards;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0 40px;
+}
+
+.cta-btn {
+    background-color: #4a00e0;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #4a00e0, #6a00e0);
+}
+
+/* Animation */
+@keyframes fadeOverlay {
+    0% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    100% {
+        background-color: rgba(169, 169, 169, 0.7);
+    }
+}
+
+.hero .fade-overlay {
+    animation: fadeOverlay 1s ease-in-out forwards;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.about-text .highlight-secondary {
+    color: #4a00e0;
+    font-style: italic;
+}
+
+.about-description {
+    flex: 1.5;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+/* Hero Section for Courses Page */
+.hero-courses {
+    position: relative;
+    background: url('qc1.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.hero-courses h1 {
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.course-cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.course-info h3 {
+    margin-top: 0;
+}
+
+.course-info p {
+    margin: 5px 0;
+}
+
+.course-link {
+    display: block;
+    text-align: center;
+    background-color: #4a00e0;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.course-link:hover {
+    background-color: #6a00e0;
+}
+
+/* Course Landing Page Styles */
+.course-hero {
+    background: #222;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.course-hero h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.course-hero p {
+    font-size: 1.2em;
+    margin: 0;
+}
+/* Larger Roadmap for Quantum Foundations Page */
+
+.course-roadmap-large {
+    background-color: #fff;
+    color: #000;
+    max-width: 800px; /* Larger width for the roadmap */
+    width: 100%;
+    padding: 40px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Center the roadmap */
+    margin-top: 40px; /* Add top margin */
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+
+.course-roadmap-large .roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* Increased space between items */
+    position: relative; /* Ensure position relative for the content */
+    background-color: #fff; /* Default white background */
+   
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+.course-roadmap-large .roadmap-item {
+   /* Gray background to match the section on the right */
+    padding: 20px; /* Add padding to ensure the content doesn't touch the edges */
+}
+.course-roadmap-large .roadmap-icon {
+    background-color: #4a00e0; /* Purple background */
+}
+.course-roadmap-large .roadmap-item:hover {
+    background-color: #d0d0d0; /* Darker gray on hover */
+}
+
+.course-roadmap-large .roadmap-icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 30px; /* Larger size for the icon */
+    height: 30px; /* Larger size for the icon */
+    border: 3px solid #4a00e0; /* Thicker border */
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 30px; /* Increased margin */
+    transition: background-color 0.3s ease;
+}
+
+.course-roadmap-large .roadmap-item:hover .roadmap-icon {
+    background-color: #4a00e0;
+}
+
+.course-roadmap-large .roadmap-content {
+    flex-grow: 1;
+    position: relative;
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    transition: background-color 0.3s ease;
+}
+
+.course-roadmap-large .roadmap-item:hover .roadmap-content {
+    background-color: #d0d0d0; /* Gray on hover */
+}
+
+.course-roadmap-large .roadmap-content h2 {
+    margin-top: 0;
+    font-size: 1.8em; /* Larger font size for headers */
+}
+
+.course-roadmap-large .roadmap-content p {
+    margin-bottom: 0;
+    font-size: 1.2em; /* Larger font size for paragraphs */
+}
+
+
+.course-roadmap-container {
+    position: relative;
+    padding-top: 2rem; /* Space between the title and roadmap */
+}
+
+
+.course-roadmap-large {
+    max-width: 800px;
+    margin: 0 auto; /* Center the roadmap */
+    position: sticky;
+    top: 10rem; /* Adjust the value to control the distance from the top */
+    background-color: white;
+    z-index: 1;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.course-roadmap-container {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.course-roadmap {
+    background-color: #fff;
+    color: #000;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.roadmap-item:last-child {
+    margin-bottom: 0;
+}
+
+.roadmap-icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4a00e0;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.roadmap-item:hover .roadmap-icon {
+    background-color: #4a00e0;
+}
+
+.roadmap-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.roadmap-item:hover .roadmap-content {
+    background-color: #d0d0d0;
+}
+
+.roadmap-content h2 {
+    margin-top: 0;
+}
+
+.roadmap-content p {
+    margin-bottom: 0;
+}
+
+/* Custom Styles for intro.html */
+body {
+    background-color: #fff; /* White background for intro page */
+    color: #000; /* Black text for intro page */
+}
+
+.header-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.course-hero {
+    background: #222;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.course-hero h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.course-hero p {
+    font-size: 1.2em;
+    margin: 0;
+}
+.course-roadmap .roadmap-content {
+    color: #000; /* Set text color to black */
+}
+
+.course-roadmap .roadmap-item {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid transparent; /* Default border color */
+    transition: background-color 0.3s, border-left-color 0.3s, color 0.3s;
+}
+
+.course-roadmap .roadmap-item:hover {
+    background-color: #d0d0d0; /* Darker gray on hover */
+    border-left-color: #4a00e0; /* Dark purple on hover */
+    color: #000; /* Ensure text color remains black on hover */
+}
+
+.course-roadmap-container {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.course-roadmap {
+    background-color: #fff;
+    color: #000;
+    max-width: 4in; /* Set width to approximately 4 inches */
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed; /* Fixed positioning */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    overflow-y: auto; /* Allow scrolling within the roadmap if needed */
+    font-size: 0.8em; /* Smaller font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-left: 5px solid gray;
+    padding-left: 10px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.roadmap-item:nth-child(1) {
+    border-left-color: purple; /* Purple for the first item */
+}
+
+.roadmap-item:hover {
+    border-left-color: purple; /* Purple on hover */
+    background-color: #f0f0f0; /* Darker gray background on hover */
+}
+
+.roadmap-icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 15px; /* Reduced size */
+    height: 15px; /* Reduced size */
+    border: 2px solid #4a00e0;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 15px; /* Reduced margin */
+    transition: background-color 0.3s ease;
+}
+
+/* Custom Styles for Quantum Foundations Roadmap */
+.large-roadmap-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Larger Roadmap for Quantum Foundations Page */
+.large-roadmap {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    max-width: 1000px; /* Adjust this width as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Center the roadmap */
+}
+
+.large-roadmap .roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Increased space between items */
+    position: relative; /* Ensure position relative for the content */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.large-roadmap .roadmap-item:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+.large-roadmap .roadmap-icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 30px; /* Larger size for the icon */
+    height: 30px; /* Larger size for the icon */
+    border: 3px solid #4a00e0; /* Thicker border */
+    border-radius: 50%;
+    background-color: transparent; /* Empty circle by default */
+    margin-right: 30px; /* Increased margin */
+    transition: background-color 0.3s ease;
+}
+
+.large-roadmap .roadmap-item:hover .roadmap-icon {
+    background-color: #4a00e0; /* Solid color on hover */
+}
+
+.large-roadmap .roadmap-content {
+    flex-grow: 1;
+    position: relative;
+    background-color: #fff; /* Background color for content area */
+    padding: 30px; /* Increased padding */
+    color: #000; /* Set text color to black */
+    transition: background-color 0.3s ease;
+}
+
+.large-roadmap .roadmap-item:hover .roadmap-content {
+    background-color: #e0e0e0; /* Gray background on hover */
+}
+
+.large-roadmap .roadmap-content h2 {
+    margin-top: 0;
+    font-size: 1.8em; /* Larger font size for headers */
+    color: #000; /* Black text for headers */
+}
+
+.large-roadmap .roadmap-content p {
+    margin-bottom: 0;
+    font-size: 1.2em; /* Larger font size for paragraphs */
+    color: #000; /* Black text for paragraphs */
+}
+
+/* Vertical line for the roadmap items */
+.large-roadmap .roadmap-line {
+    position: absolute;
+    left: -10px; /* Position the line to the left of the item */
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #ddd; /* Gray color by default */
+    transition: background-color 0.3s ease;
+}
+
+.large-roadmap .roadmap-item:hover .roadmap-line {
+    background-color: #4a00e0; /* Purple color on hover */
+}
+
+
+
+.course-hero {
+    padding-bottom: 60px; /* Add some padding to prevent overlap with the roadmap */
+}
+
+.roadmap-item:hover .roadmap-icon {
+    background-color: #4a00e0;
+}
+
+.roadmap-content {
+    background-color: #f4f4f4;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    flex-grow: 1;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.roadmap-item:hover .roadmap-content {
+    background-color: #d0d0d0;
+}
+
+.roadmap-content h2 {
+    margin-top: 0;
+}
+
+.roadmap-content p {
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #4a00e0; /* Purple color for links */
+    text-decoration: none; /* Remove underline from links */
+   
+}
+
+
+footer a {
+    color: #4a00e0;
+    text-decoration: none;
+}
+
+footer form {
+    margin-top: 20px;
+}
+
+footer input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4a00e0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer p {
+    color: #fff;
+}
