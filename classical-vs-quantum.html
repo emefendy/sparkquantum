@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Quantum Foundations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles for intro.html */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content img {
+            max-height: 50px;
+        }
+
+        .header-content nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .header-content .login-btn {
+            background-color: #4a00e0;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-hero {
+            background: #222;
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .course-hero h1 {
+            font-size: 3em;
+            margin: 0 0 20px;
+        }
+
+        .course-hero p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .course-roadmap-container {
+            padding: 40px 20px;
+            display: flex;
+            width: 100%;
+            background: #fff;
+            box-sizing: border-box;
+        }
+
+        .course-roadmap {
+            width: 300px; /* Smaller width */
+            padding-right: 20px;
+            border-right: 2px solid gray; /* Gray line */
+            position: sticky;
+            top: 0; /* Adjust as needed */
+            height: 100vh; /* Full viewport height */
+            overflow: auto; /* Handle overflow */
+        }
+
+        .course-roadmap .roadmap-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid transparent; /* Default border color */
+            transition: background-color 0.3s, border-left-color 0.3s;
+        }
+
+        .course-roadmap .roadmap-item:hover {
+            background-color: #d0d0d0;
+            border-left-color: #4a00e0; /* Dark purple on hover */
+        }
+
+        .course-roadmap .roadmap-item:hover .roadmap-icon {
+            background-color: #4a00e0;
+        }
+
+        .course-roadmap .roadmap-icon {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #4a00e0;
+            border-radius: 50%;
+            background-color: transparent;
+            margin-right: 10px;
+        }
+
+        .course-main-content {
+            width: calc(100% - 320px); /* Adjust width based on roadmap width */
+            padding-left: 20px;
+        }
+
+        .course-main-content h1 {
+            font-size: 2.5em;
+        }
+
+        .course-main-content p {
+            font-size: 1.2em;
+        }
+
+        .highlight-box {
+            background-color: #a190d6; /* Light purple background */
+            border-left: 4px solid #4a00e0; /* Darker purple border */
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px;
+            margin: 20px 0;
+            width: 80%;
+            width: fit-content; /* Adjust width based on content */
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #4a00e0;
+            text-decoration: none;
+        }
+
+        footer form {
+            margin-top: 20px;
+        }
+
+        footer input {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        footer button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #4a00e0;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="sq.png" alt="SparkQuantum Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="regions.html">Regions</a>
+            </nav>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+
+    <section class="course-hero">
+        <h1>Introduction to Quantum Foundations</h1>
+        <p>An overview of the foundational concepts in quantum computing.</p>
+    </section>
+
+    <section class="course-roadmap-container">
+        <div class="course-roadmap">
+            <a href="intro.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Introduction</h2>
+                </div>
+            </a>
+            <a href="qubits.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Qubits</h2>
+                </div>
+            </a>
+            <a href="classical-vs-quantum.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Classical vs. Super vs. Quantum Computers</h2>
+                </div>
+            </a>
+            <a href="types-of-quantum-computers.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Types of Quantum Computers</h2>
+                </div>
+            </a>
+            <a href="quantum-computing-applications.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Quantum Computing Applications</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-main-content">
+            <h1>Classical vs. Super vs. Quantum Computers</h1>
+            <p><strong>Classical vs. Quantum vs. Supercomputers 🤔</strong></p>
+            <p>Each type of computer—classical, quantum, and super—tackles problems in unique ways, suited to its architecture and capabilities. Here’s a look at how these powerhouses differ!</p>
+
+            <br>
+
+            <h2>Classical Computers: The Reliable Everyday Workhorse 💻</h2>
+            <p>Classical computers are what most of us use daily for everything from browsing the internet to running software applications. They process information using bits, which exist in one of two states: 0 or 1. This binary nature gives classical computers a straightforward, yes-or-no way to handle information.</p>
+
+            <p><strong>How Classical Computers Work:</strong></p>
+            <p>Classical computers use <em>logic gates</em> to manipulate bits, processing them through a series of operations to carry out tasks. These operations happen in sequence, so while modern processors are extremely fast, they are limited by the linear way they handle tasks.</p>
+            
+            <figure class="centered-figure">
+                          <img src="logicgates.png" alt="Quantum Computing Overview">
+                          <figcaption>Some common logic gates, which help computers solve problems.</figcaption>
+                      </figure>
+
+            <p><strong>What They’re Good At:</strong></p>
+            <p>Classical computers are excellent for tasks that follow a clear, predictable path, like:
+            <ul>
+              <li>Office applications: Writing documents, building spreadsheets, or creating presentations.</li>
+              <li>Entertainment: Streaming videos, gaming, and using social media.</li>
+              <li>Mathematical calculations: Classical computers can handle structured computations very well.</li>
+            </ul>
+            </p>
+
+            <p><strong>Limitations:</strong></p>
+            <p>Despite their power, classical computers struggle with problems that require examining a vast number of possibilities simultaneously, like certain cryptographic calculations or large-scale simulations of complex systems.</p>
+
+            <br>
+
+            
+            <p><h2>Supercomputers: The Classical Powerhouses 🚀</h2>
+            <p>Supercomputers are the giants of classical computing, built to perform an extraordinary number of calculations in a short amount of time. They don’t have the quantum power of superposition or entanglement, but they make up for it by harnessing thousands or even millions of processors working in parallel.</p>
+
+            <p><strong>How Supercomputers Work:</strong></p>
+            <p>Supercomputers use <em>massive parallel processing</em>, which splits large tasks into smaller ones that can be processed simultaneously. Each processor works on a specific piece of the task, which is then combined to form the final result.</p>
+
+            <p><strong>Applications:</strong></p>
+            <p>Supercomputers are essential for simulations and tasks that involve large datasets, including:
+            <ul>
+              <li>Weather and climate modeling: Simulating weather patterns and tracking climate change.</li>
+              <li>Scientific research: Modeling complex systems in fields like astrophysics, genomics, and materials science.</li>
+              <li>Nuclear simulations: Testing nuclear reactions and weapon simulations without physical experiments.</li>
+            </ul>
+            </p>
+
+            <p><strong>Limitations:</strong></p>
+            <p>Supercomputers, while powerful, are not equipped for the parallelism of quantum computing. They also consume immense amounts of power, making them costly to operate.</p>
+
+            <br>
+
+            <p><h2>Quantum Computers: The New Frontier of Computing 🌌</h2>
+            <p>Quantum computers operate on principles of quantum mechanics, a branch of physics that deals with particles at the atomic and subatomic level. Instead of bits, quantum computers use <em>qubits</em>, which can exist in multiple states at once.</p>
+
+            <p><strong>Key Features of Quantum Computing:</strong></p>
+            <p>1. <strong>Superposition</strong>: Unlike a bit, a qubit can be both 0 and 1 at the same time. This allows quantum computers to consider multiple possibilities simultaneously, essentially processing information in parallel.</p>
+            <p>2. <strong>Entanglement</strong>: When qubits become entangled, the state of one qubit is directly related to the state of another, even across great distances.</p>
+            <p>3. <strong>Quantum Interference</strong>: Quantum computers use interference to amplify correct answers and cancel out incorrect ones, improving the accuracy of their solutions.</p>
+
+            <p><strong>Applications:</strong></p>
+            <p>Quantum computers are ideal for tasks involving vast combinations or simulations, such as:
+            <ul>
+              <li>Drug discovery: Simulating molecular interactions to accelerate the development of new medicines.</li>
+              <li>Cryptography: Quantum computers could potentially break current encryption methods by factoring large numbers faster than classical computers.</li>
+              <li>Optimization problems: Industries like finance, logistics, and manufacturing could benefit from the speed and precision of quantum algorithms.</li>
+            </ul>
+            </p>
+
+            <p><strong>Challenges:</strong></p>
+            <p>Quantum computers are still in experimental stages. They are incredibly sensitive to environmental interference, making it difficult to maintain stable qubits over time. Building quantum computers also requires advanced materials and technologies, which are complex and expensive to produce.</p>
+
+            <br>
+
+            <p><h2>The Future of Computing: Why All Three Matter</h2>
+            <p>Each type of computer has its strengths, and as our world grows more complex, there’s a strong case for <em>hybrid systems</em>. Some companies are already researching ways to combine classical and quantum processors, allowing them to solve a wider variety of problems faster than ever before. In the near future, supercomputers may work alongside quantum computers, with classical computers managing everyday tasks and specialized devices handling the rest.</p>
+
+            <p>With these complementary technologies, we might just be able to tackle some of humanity’s most challenging problems. 🧩</p>
+
+
+           
+        </div>
+    </section>
+
+</body>
+</html>
