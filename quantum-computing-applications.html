@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Quantum Foundations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles for intro.html */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content img {
+            max-height: 50px;
+        }
+
+        .header-content nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .header-content .login-btn {
+            background-color: #4a00e0;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-hero {
+            background: #222;
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .course-hero h1 {
+            font-size: 3em;
+            margin: 0 0 20px;
+        }
+
+        .course-hero p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .course-roadmap-container {
+            padding: 40px 20px;
+            display: flex;
+            width: 100%;
+            background: #fff;
+            box-sizing: border-box;
+        }
+
+        .course-roadmap {
+            width: 300px; /* Smaller width */
+            padding-right: 20px;
+            border-right: 2px solid gray; /* Gray line */
+            position: sticky;
+            top: 0; /* Adjust as needed */
+            height: 100vh; /* Full viewport height */
+            overflow: auto; /* Handle overflow */
+        }
+
+        .course-roadmap .roadmap-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid transparent; /* Default border color */
+            transition: background-color 0.3s, border-left-color 0.3s;
+        }
+
+        .course-roadmap .roadmap-item:hover {
+            background-color: #d0d0d0;
+            border-left-color: #4a00e0; /* Dark purple on hover */
+        }
+
+        .course-roadmap .roadmap-item:hover .roadmap-icon {
+            background-color: #4a00e0;
+        }
+
+        .course-roadmap .roadmap-icon {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #4a00e0;
+            border-radius: 50%;
+            background-color: transparent;
+            margin-right: 10px;
+        }
+
+        .course-main-content {
+            width: calc(100% - 320px); /* Adjust width based on roadmap width */
+            padding-left: 20px;
+        }
+
+        .course-main-content h1 {
+            font-size: 2.5em;
+        }
+
+        .course-main-content p {
+            font-size: 1.2em;
+        }
+
+        .highlight-box {
+            background-color: #a190d6; /* Light purple background */
+            border-left: 4px solid #4a00e0; /* Darker purple border */
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px;
+            margin: 20px 0;
+            width: 80%;
+            width: fit-content; /* Adjust width based on content */
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #4a00e0;
+            text-decoration: none;
+        }
+
+        footer form {
+            margin-top: 20px;
+        }
+
+        footer input {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        footer button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #4a00e0;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="sq.png" alt="SparkQuantum Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="regions.html">Regions</a>
+            </nav>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+
+    <section class="course-hero">
+        <h1>Introduction to Quantum Foundations</h1>
+        <p>An overview of the foundational concepts in quantum computing.</p>
+    </section>
+
+    <section class="course-roadmap-container">
+        <div class="course-roadmap">
+            <a href="intro.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Introduction</h2>
+                </div>
+            </a>
+            <a href="qubits.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Qubits</h2>
+                </div>
+            </a>
+            <a href="classical-vs-quantum.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Classical vs. Super vs. Quantum Computers</h2>
+                </div>
+            </a>
+            <a href="types-of-quantum-computers.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Types of Quantum Computers</h2>
+                </div>
+            </a>
+            <a href="quantum-computing-applications.html" class="roadmap-item">
+                <div class="roadmap-icon"></div>
+                <div class="roadmap-content">
+                    <h2>Quantum Computing Applications</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-main-content">
+            
+            <p><strong>Quantum Computing Applications 🚀</strong></p>
+            <p>Quantum computing has the potential to revolutionize various industries, thanks to its ability to process complex calculations far faster than classical computers. Here’s a look at some of the most promising applications of quantum computing:</p>
+
+            <br>
+
+            <p><strong>1. Drug Discovery and Development 💊</strong></p>
+            <p>Quantum computers can simulate molecular structures and chemical reactions at an atomic level, something classical computers struggle with due to the sheer complexity. This capability could vastly accelerate the process of drug discovery by allowing researchers to predict how different compounds interact with biological targets. For instance, instead of testing thousands of compounds in the lab, quantum simulations can help identify the most promising candidates before lab testing begins.</p>
+
+            <p>Pharmaceutical companies could use quantum computing to explore complex molecules and optimize drug compounds for efficiency and safety, potentially reducing both the time and cost involved in bringing new drugs to market. Companies like IBM and Google, as well as startups, are actively working on quantum algorithms for molecular simulation, hoping to drive the future of medicine.</p>
+
+            <figure class="centered-figure">
+                          <img src="simulation.png" alt="Quantum Computing Overview">
+                          <figcaption>By accurating "replicating" molecular interactions through qubits, quantum computers can simulate molecules much more efficiently than classical computers. </figcaption>
+                      </figure>
+            <br>
+
+            <p><strong>2. Financial Modeling 💰</strong></p>
+            <p>Financial markets are influenced by countless variables, and predicting market behavior is a monumental task. Quantum computers can analyze vast datasets and run complex algorithms to create more accurate financial models, potentially enhancing risk assessment, optimizing investment portfolios, and detecting fraudulent activity.</p>
+
+            <p>In particular, quantum computing can improve Monte Carlo simulations, which are used in finance to model uncertainties and calculate probabilities. By accelerating these simulations, quantum computers can provide quicker insights and allow for more accurate and timely decision-making. Banks like JPMorgan Chase are already exploring quantum computing to optimize their financial strategies and risk assessments.</p>
+
+            <br>
+
+            <p><strong>3. Logistics and Supply Chain Optimization 🚚</strong></p>
+            <p>Managing supply chains and logistics involves coordinating countless moving parts, from inventory management to route optimization. Quantum computing can address these challenges by providing more efficient solutions to complex optimization problems. For example, quantum algorithms could help companies identify the most efficient routes, minimize delivery times, and reduce fuel costs.</p>
+
+            <p>This application is particularly valuable for industries like e-commerce, where logistics are critical to business operations. Quantum optimization could help streamline processes, lower costs, and improve overall efficiency in logistics and supply chains. Companies like Volkswagen are already experimenting with quantum algorithms for optimizing traffic flow and improving supply chain logistics.</p>
+
+            <br>
+
+            <p><strong>4. Cryptography and Cybersecurity 🔐</strong></p>
+            <p>Quantum computing has major implications for cybersecurity. Classical encryption methods, like RSA, rely on the difficulty of factoring large numbers—a task that quantum computers could solve in seconds using algorithms like Shor’s algorithm. This breakthrough could potentially make current encryption methods vulnerable to quantum attacks.</p>
+
+            <p>As a result, researchers are developing quantum-resistant cryptographic techniques to protect data from quantum threats. Quantum cryptography, specifically quantum key distribution (QKD), is an emerging field that uses the principles of quantum mechanics to secure communications, ensuring that any interception attempt would be detectable. Governments and tech companies are investing in post-quantum cryptography to prepare for the next era of secure communication.</p>
+
+            <div class="highlight-box">
+                <h2>Want to learn about Shor's Algorithm? <i>Shor</i> thing! </h2>
+                <p>Shor's Algorithm, developed by mathematician Peter Shor, is a quantum algorithm that can efficiently factorize large numbers. In classical computing, factoring a large number (especially those used in encryption) can take an impractical amount of time, making it an effective way to secure data. However, Shor's Algorithm can solve this problem exponentially faster using quantum principles.</p>
+                <p>The algorithm relies on two key quantum properties: superposition and interference. It uses superposition to represent multiple possible factors simultaneously, then applies interference to cancel out incorrect answers, leaving only the correct factors. This efficiency makes it possible for quantum computers to break widely used encryption methods, like RSA, by quickly factoring the large prime numbers they rely on.</p>
+                <p>Shor’s Algorithm is a major reason why quantum computing poses a potential threat to classical cryptography. Its development has spurred research into quantum-resistant encryption, as well as the broader field of quantum cryptography!</p>
+            </div>
+
+            <br>
+
+            <p><strong>5. Artificial Intelligence and Machine Learning 🧠</strong></p>
+            <p>Machine learning and artificial intelligence rely on processing large datasets and finding patterns. Quantum computing has the potential to significantly accelerate machine learning algorithms by processing information in parallel, enabling faster and more complex computations.</p>
+
+            <p>Quantum machine learning could lead to breakthroughs in fields such as image and speech recognition, natural language processing, and predictive analytics. Google, for instance, is working on quantum algorithms that could improve machine learning models and enhance their efficiency. Quantum computing may help AI applications become more advanced, responsive, and adaptable, transforming industries that rely on intelligent automation.</p>
+
+          
+</body>
+</html>
